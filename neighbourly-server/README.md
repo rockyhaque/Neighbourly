@@ -8,9 +8,7 @@ Effortlessly connect residents with trusted home service providers. Our E-Societ
 
 #### Server APIs -> https://neighbourly-server.vercel.app
 
-#### Client Repository -> https://github.com/rockyhaque/neighbourly-client
-
-#### Backend Repository -> https://github.com/rockyhaque/neighbourly-server
+#### Repository -> https://github.com/rockyhaque/Neighbourly
 
 
 <hr>
