@@ -1,0 +1,21 @@
+.modal-content {
+  background: linear-gradient(135deg, #f6f2ff, #aeabf7); 
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(50, 43, 75, 0.8); 
+  color: black; 
+}
+
+  
+  .opening {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .closing {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  

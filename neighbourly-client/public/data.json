@@ -1,0 +1,78 @@
+[
+    {
+      "service_title": "Electrical Wiring and Repairs",
+      "category": "Electrical",
+      "phone": "+8801555-123487",
+      "address": "123 Main St, Dhaka",
+      "sex": "Male",
+      "about_me": "I am a certified electrician with over 10 years of experience in both residential and commercial electrical work. I specialize in wiring, repairs, and installations for homes, offices, and industrial spaces. Over the years, I have handled a wide range of electrical issues, from simple wiring repairs to complex installations for large commercial buildings. My goal is to ensure that every job is done safely, efficiently, and in compliance with all local codes and regulations. I take pride in delivering high-quality services and making sure that my clients are satisfied with the work I provide. I am well-versed in troubleshooting electrical problems, upgrading electrical panels, and installing energy-efficient lighting systems. Whether you need help with rewiring an old house or installing new electrical fixtures, I am here to help. I am always available for emergency repairs and offer flexible working hours to suit your needs. With a passion for safety and quality, I continue to stay updated with the latest technologies and best practices in the electrical field.",
+      "experience": "10 years",
+      "additional_notes": "Available for emergency repairs.",
+      "skills": ["Wiring", "Electrical Installations", "Repair"],
+      "shift": "Full-time",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "worker": "John Doe"
+    },
+    {
+      "service_title": "Plumbing Leak Fix and Installations",
+      "category": "Plumbing",
+      "phone": "555-5678",
+      "address": "456 Lakeview Rd, Dhaka",
+      "sex": "Male",
+      "about_me": "As a licensed and certified plumber with 5 years of experience, I have worked on a variety of plumbing projects, ranging from simple pipe repairs to full plumbing installations for both residential and commercial properties. My expertise includes leak detection, pipe replacement, bathroom and kitchen plumbing installations, as well as emergency repairs. I am committed to providing top-notch service, and I believe in doing the job right the first time to avoid future issues. My attention to detail and dedication to quality make me a reliable choice for any plumbing task, big or small. I understand how stressful plumbing problems can be for homeowners and business owners alike, which is why I always aim to offer fast, efficient, and affordable solutions. Customer satisfaction is my top priority, and I strive to ensure that every client is happy with the service provided. I also offer consultation services to help you understand the best plumbing solutions for your specific needs. Whether it’s a minor leak or a major installation, you can trust me to get the job done quickly and effectively.",
+      "experience": "5 years",
+      "additional_notes": "Special discounts for new customers.",
+      "skills": ["Pipe Repair", "Leak Fixing", "Bathroom Installations"],
+      "shift": "Part-time",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "worker": "Adam Smith"
+    },
+    {
+      "service_title": "Carpentry Custom Furniture",
+      "category": "Carpentry",
+      "phone": "555-9876",
+      "address": "789 Forest Dr, Dhaka",
+      "sex": "Female",
+      "about_me": "I am a professional carpenter with over 8 years of hands-on experience in crafting custom furniture, repairing wooden structures, and performing detailed woodwork for homes and businesses. My passion for carpentry began at a young age, and I have since turned that passion into a thriving career. I specialize in creating bespoke furniture pieces that are designed to meet the unique tastes and needs of my clients. Whether you are looking for custom cabinetry, wooden doors, or furniture repairs, I bring a keen eye for detail and craftsmanship to every project. I enjoy working closely with my clients to bring their ideas to life, ensuring that the finished product is both functional and aesthetically pleasing. Over the years, I have developed strong problem-solving skills, allowing me to tackle even the most complex woodworking challenges. In addition to custom work, I also offer general carpentry services such as repair and restoration of antique furniture, door installation, and hardwood flooring repairs. I take pride in delivering high-quality craftsmanship and exceeding client expectations. My goal is to make sure every project is completed to the highest standard, on time, and within budget.",
+      "experience": "8 years",
+      "additional_notes": "Can create custom furniture designs upon request.",
+      "skills": ["Furniture Repairs", "Custom Woodwork", "Cabinet Making"],
+      "shift": "Full-time",
+      "start_time": "08:00",
+      "end_time": "16:00",
+      "worker": "Jane Doe"
+    },
+    {
+      "service_title": "Garden Landscaping and Lawn Maintenance",
+      "category": "Gardening",
+      "phone": "555-2468",
+      "address": "22 Green Park, Dhaka",
+      "sex": "Male",
+      "about_me": "I am an experienced gardener with over 6 years of expertise in landscaping, lawn maintenance, and plant care. I specialize in creating beautiful outdoor spaces that are not only visually appealing but also sustainable and easy to maintain. Whether you are looking to revamp your garden, maintain a healthy lawn, or add new plants to your outdoor space, I have the knowledge and skills to bring your vision to life. I am passionate about nature and take great pride in transforming ordinary yards into stunning landscapes that clients can enjoy year-round. My services include everything from lawn mowing and hedge trimming to flower bed design and tree planting. I also offer advice on plant care, helping clients choose the best plants for their soil and climate conditions. With a strong focus on eco-friendly practices, I use sustainable techniques that promote healthy plant growth and reduce the need for chemical treatments. My goal is to create outdoor spaces that reflect my clients' personal style while also enhancing the overall beauty and value of their property. I am committed to delivering reliable, high-quality services with attention to detail.",
+      "experience": "6 years",
+      "additional_notes": "Seasonal discounts available for regular clients.",
+      "skills": ["Lawn Mowing", "Landscaping", "Plant Care"],
+      "shift": "Part-time",
+      "start_time": "07:00",
+      "end_time": "11:00",
+      "worker": "Michael Green"
+    },
+    {
+      "service_title": "House Cleaning Services",
+      "category": "Housekeeping",
+      "phone": "555-8642",
+      "address": "98 Clean Ave, Dhaka",
+      "sex": "Female",
+      "about_me": "With over 4 years of experience in professional cleaning, I specialize in providing thorough, detailed, and efficient cleaning services for both residential and commercial properties. My goal is to make your space spotless, comfortable, and welcoming. Whether you need regular housekeeping, deep cleaning, or move-in/move-out services, I am dedicated to delivering the highest level of cleanliness and hygiene. I take pride in my attention to detail, ensuring that every corner, surface, and appliance is cleaned to perfection. I am well-versed in using eco-friendly and non-toxic cleaning products, making sure your home or office is safe for both people and pets. My services are customized to meet the specific needs of each client, whether it's daily cleaning, weekly maintenance, or one-time services. Over the years, I have built a reputation for being reliable, punctual, and respectful of my clients' spaces. I work efficiently without compromising on quality, and I always aim to exceed expectations. Your satisfaction is my priority, and I am always happy to adjust my services based on your feedback and preferences. Cleanliness is my passion, and I look forward to making your home or office shine!",
+      "experience": "4 years",
+      "additional_notes": "Flexible working hours upon request.",
+      "skills": ["Deep Cleaning", "Regular Cleaning", "Floor Polishing"],
+      "shift": "Full-time",
+      "start_time": "08:30",
+      "end_time": "16:30",
+      "worker": "Emily White"
+    }
+  ]
+  
