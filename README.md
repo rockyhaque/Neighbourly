@@ -1,6 +1,10 @@
 # Neighbourly
 
+<img src="./neighbourly-client/public/logo.png" align="right" width="110" height="110" />
+
 Effortlessly connect residents with trusted home service providers. Our E-Society Management platform ensures easy access to local experts for plumbing, electrical work, cleaning, and more within the community.
+
+
 
 
 #### Live URL -> https://neighbourly-beta.web.app
