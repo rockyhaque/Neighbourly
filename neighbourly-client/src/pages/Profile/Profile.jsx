@@ -89,7 +89,7 @@ const Profile = () => {
         </Helmet>
         <div className=" py-12 flex flex-wrap items-center justify-center ">
           <div className="container lg:w-2/6 xl:w-2/7 sm:w-full md:w-2/3 bg-white  shadow-lg transform duration-200 ease-in-out ">
-            {/* Cover Image */}
+            {/* Cover Img */}
             <div className="h-32 overflow-hidden">
               <img
                 className="w-full rounded-t-xl"
