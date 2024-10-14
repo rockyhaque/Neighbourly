@@ -1,4 +1,4 @@
-# Neighbourly
+# Neighbourly | Bridging Residents and Reliable Service Providers
 
 <img src="./neighbourly-client/public/logo.png" align="right" width="110" height="110" />
 
