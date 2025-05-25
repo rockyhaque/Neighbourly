@@ -54,7 +54,7 @@ const UpdateRoleModal = ({ user, isOpen, setIsOpen, refetch }) => {
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-70">
       <div className={`modal-content ${animateModal ? "closing" : "opening"}`}>
         <div className="avatar flex justify-center">
-          <div className="ring-indigo-300 ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+          <div className="ring-sky-300 ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
             <img src={user?.photo} />
           </div>
         </div>
@@ -68,7 +68,7 @@ const UpdateRoleModal = ({ user, isOpen, setIsOpen, refetch }) => {
           <select
             value={selectedRole}
             onChange={(e) => setSelectedRole(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 bg-gradient-to-r from-purple-100 to-purple-300 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-700"
+            className="mt-1 block w-full px-3 py-2 bg-gradient-to-r from-purple-100 to-purple-300 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-700"
           >
             <option value="resident">Resident</option>
             <option value="worker">Worker</option>

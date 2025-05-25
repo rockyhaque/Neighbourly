@@ -13,7 +13,7 @@ export default function TimeTracker() {
   const { user } = useAuth();
 
   useEffect(() => {
-    const savedTime = localStorage.getItem('timerTime');
+    const savedTime = localStorage.getItem("timerTime");
     if (savedTime) {
       setTime(parseInt(savedTime, 10));
     }
@@ -22,14 +22,14 @@ export default function TimeTracker() {
     if (isRunning) {
       interval = setInterval(() => {
         setTime((prevTime) => prevTime + 10);
-        localStorage.setItem('timerTime', (time + 10).toString()); 
+        localStorage.setItem("timerTime", (time + 10).toString());
       }, 10);
     }
 
     return () => {
       clearInterval(interval);
       if (!isRunning) {
-        localStorage.removeItem('timerTime'); 
+        localStorage.removeItem("timerTime");
       }
     };
   }, [isRunning, time]);
@@ -41,7 +41,7 @@ export default function TimeTracker() {
   const handleReset = () => {
     setIsRunning(false);
     setTime(0);
-    localStorage.removeItem('timerTime'); 
+    localStorage.removeItem("timerTime");
   };
 
   const handleEnd = async () => {
@@ -58,7 +58,7 @@ export default function TimeTracker() {
       confirmButtonText: "Yes, end it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        handleReset(); 
+        handleReset();
         Swal.fire({
           title: `Good Job ✔️ ${user?.displayName}`,
           text: `You worked for ${timeWorked}.\nYour payment is ${payment} BDT.`,
@@ -84,7 +84,9 @@ export default function TimeTracker() {
 
     return `${hours.toString().padStart(2, "0")}:${minutes
       .toString()
-      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds.toString().padStart(2, "0")}`;
+      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds
+      .toString()
+      .padStart(2, "0")}`;
   };
 
   return (
@@ -115,7 +117,7 @@ export default function TimeTracker() {
           <button
             onClick={handleEnd}
             disabled={time < 5000} // Disable if less than 1 second
-            className="btn bg-indigo-300 text-indigo-800 font-semibold disabled:cursor-not-allowed"
+            className="btn bg-sky-300 text-sky-800 font-semibold disabled:cursor-not-allowed"
           >
             <FaUpload />
             End

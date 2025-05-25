@@ -15,6 +15,8 @@ import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import MyListings from "../pages/Dashboard/Worker/MyListings";
 import ManageBookings from "../pages/Dashboard/Worker/ManageBookings";
 import About from "../components/About/About";
+import ContactUsPage from "../pages/ContactUs/ContactUs";
+import FAQ from "../components/FAQ/FAQ";
 // import WorkerRoute from "./WorkerRoute";
 // import AdminRoute from "./AdminRoute";
 
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUsPage />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ />,
       },
       {
         path: "/service/:id",

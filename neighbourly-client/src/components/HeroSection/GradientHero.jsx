@@ -101,7 +101,7 @@ const GradientHero = () => {
             >
               <Link
                 to="/register"
-                className="flex-1 font-bold text-xl bg-white px-6 py-3 rounded-xl hover:bg-indigo-50 transition-colors duration-300 shadow-md hover:shadow-xl"
+                className="flex-1 font-bold text-xl bg-white px-6 py-3 rounded-xl hover:bg-sky-50 transition-colors duration-300 shadow-md hover:shadow-xl"
               >
                 Sign Up / Sign In
               </Link>
@@ -119,7 +119,7 @@ const GradientHero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleApplyWorker}
-                className="flex-1 font-bold text-xl bg-white px-6 py-3 rounded-xl hover:bg-indigo-50 transition-colors duration-300 shadow-md hover:shadow-xl"
+                className="flex-1 font-bold text-xl bg-white px-6 py-3 rounded-xl hover:bg-sky-50 transition-colors duration-300 shadow-md hover:shadow-xl"
               >
                 Join as a Worker
               </motion.button>

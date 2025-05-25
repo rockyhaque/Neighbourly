@@ -29,8 +29,7 @@ const ManageUsers = () => {
     },
   });
 
-
-  console.log(users)
+  console.log(users);
 
   // Mutation to delete user
   const deleteUserMutation = useMutation({
@@ -177,7 +176,7 @@ const ManageUsers = () => {
                             <div
                               className={`inline-flex items-center px-3 py-1 rounded-full gap-x-2 ${
                                 user?.status === "Verified"
-                                  ? "bg-indigo-100/60 dark:bg-gray-800" // Indigo background for Verified
+                                  ? "bg-sky-100/60 dark:bg-gray-800" // sky background for Verified
                                   : user?.status === "Requested"
                                   ? "bg-red-100/60 dark:bg-gray-800" // Red background for Requested
                                   : "bg-gray-100/60 dark:bg-gray-800" // Default background for other statuses
@@ -186,7 +185,7 @@ const ManageUsers = () => {
                               <span
                                 className={`h-1.5 w-1.5 rounded-full ${
                                   user?.status === "Verified"
-                                    ? "bg-indigo-500" // Indigo dot for Verified
+                                    ? "bg-sky-500" // sky dot for Verified
                                     : user?.status === "Requested"
                                     ? "bg-red-500" // Red dot for Requested
                                     : "bg-gray-500" // Default dot for other statuses
@@ -195,7 +194,7 @@ const ManageUsers = () => {
                               <h2
                                 className={`text-sm font-normal ${
                                   user?.status === "Verified"
-                                    ? "text-indigo-500" // Indigo text for Verified
+                                    ? "text-sky-500" // sky text for Verified
                                     : user?.status === "Requested"
                                     ? "text-red-500" // Red text for Requested
                                     : "text-gray-500" // Default text for other statuses

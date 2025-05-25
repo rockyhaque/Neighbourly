@@ -27,8 +27,8 @@ const Sidebar = () => {
 
         <div className="font-nunitoSans">
           <div className="relative cursor-pointer dark:text-white">
-            <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200" />
-            <div className="relative p-1 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500">
+            <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-sky-500 rounded-lg dark:bg-gray-200" />
+            <div className="relative p-1 bg-white dark:bg-gray-800 border-2 border-sky-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500">
               <div className="flex items-center">
                 <div className="flex items-center space-x-4 p-2">
                   <img
@@ -68,7 +68,10 @@ const Sidebar = () => {
       {/* Logout button */}
 
       <div className="flex justify-evenly items-center my-12 text-gray-300 gap-4">
-        <button onClick={logOut} className="relative inline-block px-6 py-3 font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900">
+        <button
+          onClick={logOut}
+          className="relative inline-block px-6 py-3 font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900"
+        >
           <span className="absolute inset-0 overflow-hidden rounded-xl">
             <span className="absolute inset-0 rounded-xl bg-[radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
           </span>
@@ -79,8 +82,6 @@ const Sidebar = () => {
           <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
         </button>
       </div>
-
-
     </div>
   );
 };

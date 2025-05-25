@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const NavItems = ({ to, children }) => {
   return (
@@ -9,6 +10,11 @@ const NavItems = ({ to, children }) => {
       {children}
     </Link>
   );
+};
+
+NavItems.propTypes = {
+  to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default NavItems;

@@ -8,7 +8,7 @@ import ConfirmBookingModal from "../../components/Modal/ConfirmBookingModal/Conf
 import useAxiosCommon from "../../hooks/useAxiosCommon";
 // import { formatDistanceToNow } from "date-fns";
 // import cover from "../../assets/img/hello.png";
-import useRole from './../../hooks/useRole';
+import useRole from "./../../hooks/useRole";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -82,7 +82,7 @@ const ServiceDetails = () => {
                         </div>
                       </div>
                       <div className="flex justify-center items-center">
-                        <p className="badge bg-gradient-to-r from-indigo-900 to-gray-900 text-gray-200">
+                        <p className="badge bg-gradient-to-r from-sky-900 to-gray-900 text-gray-200">
                           {service?.availability_status}
                         </p>
                       </div>
@@ -90,7 +90,7 @@ const ServiceDetails = () => {
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 text-center lg:text-right lg:self-center">
                     <div className="py-0 md:py-6 px-3 mt-10 sm:mt-0">
-                      <button className="relative px-4 py-2 text-sm text-indigo-600 font-semibold rounded-full border border-indigo-200 bg-white overflow-hidden transition-transform duration-300 ease-in-out hover:bg-indigo-600 hover:border-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">
+                      <button className="relative px-4 py-2 text-sm text-sky-600 font-semibold rounded-full border border-sky-200 bg-white overflow-hidden transition-transform duration-300 ease-in-out hover:bg-sky-600 hover:border-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2">
                         <div className="text-animation">
                           <span>N</span>
                           <span>e</span>
@@ -204,11 +204,11 @@ const ServiceDetails = () => {
                   <div className="my-8 text-center">
                     <button
                       type="button"
-                      disabled={role === "worker" }
+                      disabled={role === "worker"}
                       onClick={() => setModalOpen(true)}
-                      className="relative inline-flex items-center justify-start px-6 md:px-16 py-3 overflow-hidden font-medium transition-all bg-white border border-indigo-200 rounded hover:bg-white group disabled:cursor-not-allowed"
+                      className="relative inline-flex items-center justify-start px-6 md:px-16 py-3 overflow-hidden font-medium transition-all bg-white border border-sky-200 rounded hover:bg-white group disabled:cursor-not-allowed"
                     >
-                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-indigo-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-sky-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                       <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                         Book Now
                       </span>

@@ -218,7 +218,7 @@ const Login = () => {
                   <button
                     disabled={loading}
                     type="submit"
-                    className="bg-gradient-to-r from-indigo-900 to-zinc-900 hover:bg-gradient-to-r hover:from-zinc-700 hover:to-zinc-900 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600"
+                    className="bg-gradient-to-r from-sky-900 to-zinc-900 hover:bg-gradient-to-r hover:from-zinc-700 hover:to-zinc-900 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600"
                   >
                     {loading ? (
                       <CgSpinnerTwoAlt className="animate-spin m-auto" />

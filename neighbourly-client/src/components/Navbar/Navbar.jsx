@@ -10,7 +10,7 @@ const Navbar = () => {
   const [role] = useRole();
 
   return (
-    <nav className="relative bg-white  dark:bg-gray-800 shadow-2xl shadow-indigo-100 sticky z-50 top-0">
+    <nav className="relative bg-white  dark:bg-gray-800 shadow-2xl sticky z-50 top-0">
       <div className="max-w-screen-xl px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
@@ -74,8 +74,9 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center justify-center -mx-6 lg:flex-row lg:items-center lg:mx-8">
               <NavItems to="/">Home</NavItems>
+              <NavItems to="/contact-us">Contact Us</NavItems>
               <NavItems to="/about">About</NavItems>
-              {/* <NavItems to="/profile">Update Profile</NavItems> */}
+              <NavItems to="/faq">FAQ</NavItems>
               <NavItems to="/dashboard">Dashboard</NavItems>
               {!user && (
                 <>
@@ -107,19 +108,19 @@ const Navbar = () => {
 
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content bg-gradient-to-r from-indigo-100 to-violet-100 rounded-box z-[1] mt-3 w-52 p-2 shadow left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none"
+                  className="menu menu-sm dropdown-content bg-gradient-to-r from-sky-100 to-violet-100 rounded-box z-[1] mt-3 w-52 p-2 shadow left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none"
                 >
                   <li>
                     <div className="justify-between">
                       {user?.displayName}
-                      <span className="badge bg-indigo-300">
+                      <span className="badge bg-sky-300">
                         {role.charAt(0).toUpperCase() +
                           role.slice(1).toLowerCase()}
                       </span>
                     </div>
                   </li>
                   <li>
-                    <Link to="/profile" >
+                    <Link to="/profile">
                       <p>Profile Settings</p>
                     </Link>
                   </li>

@@ -31,7 +31,10 @@ export default function OurSpecialty() {
         {/* Main content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl  font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-800  " data-aos="fade-down-right">
+            <h1
+              className="text-4xl md:text-5xl  font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-blue-800  "
+              data-aos="fade-down-right"
+            >
               Our Specialty at Neighbourly
             </h1>
             <p className="text-xl md:text-2xl text-gray-500 mb-8">
@@ -41,20 +44,22 @@ export default function OurSpecialty() {
               <div className="space-y-4">
                 <div className="flex items-center" data-aos="zoom-out-left">
                   <FaCheckCircle className="text-green-500 mr-2 " />
-                  <p className="text-gray-600" >
+                  <p className="text-gray-600">
                     Trusted and verified professionals offering quality
                     services.
                   </p>
                 </div>
                 <div className="flex items-center" data-aos="zoom-out-left">
                   <FaCheckCircle className="text-green-500 mr-2 " />
-                  <p className="text-gray-600" >
+                  <p className="text-gray-600">
                     On-demand services tailored to your specific home needs.
                   </p>
                 </div>
                 <div className="flex items-center" data-aos="zoom-out-left">
                   <FaCheckCircle className="text-green-500 mr-2 " />
-                  <p className="text-gray-600" >Easy and secure booking process through our platform.</p>
+                  <p className="text-gray-600">
+                    Easy and secure booking process through our platform.
+                  </p>
                 </div>
               </div>
             </div>
@@ -164,7 +169,7 @@ export default function OurSpecialty() {
                     <img
                       src={item.icon}
                       alt={`${item.title} icon`}
-                      className="w-16 h-16 animate-bounce shadow-2xl shadow-indigo-300 p-2 rounded-lg"
+                      className="w-16 h-16 animate-bounce shadow-2xl shadow-sky-300 p-2 rounded-lg"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold text-white mb-4">

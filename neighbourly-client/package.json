@@ -16,6 +16,7 @@
     "date-fns": "^3.6.0",
     "firebase": "^10.13.1",
     "framer-motion": "^11.11.8",
+    "lucide-react": "^0.511.0",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.45",
     "nodemailer": "^6.9.15",

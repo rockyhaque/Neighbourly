@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="bg-gray-900  min-h-screen relative overflow-hidden pb-20">
+    <div className="bg-gray-900 min-h-screen relative overflow-hidden pb-20">
       <div>
         <div className="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24">
           <div className="relative">
@@ -8,7 +8,7 @@ const About = () => {
               <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
                 <div>
                   <div>
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -37,7 +37,7 @@ const About = () => {
                     </p>
                     <div className="mt-6">
                       <a
-                        className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                        className="inline-flex rounded-lg bg-sky-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-sky-600 hover:bg-sky-700 hover:ring-sky-700"
                         href="/services"
                       >
                         Discover Services
@@ -66,7 +66,7 @@ const About = () => {
               <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -96,7 +96,7 @@ const About = () => {
                     </p>
                     <div className="mt-6">
                       <a
-                        className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                        className="inline-flex rounded-lg bg-sky-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-sky-600 hover:bg-sky-700 hover:ring-sky-700"
                         href="/services"
                       >
                         Learn More
@@ -126,8 +126,8 @@ const About = () => {
         aria-hidden="true"
         className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20"
       >
-        <div className="blur-[106px] h-56 bg-gradient-to-br to-indigo-400 from-blue-700"></div>
-        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600"></div>
+        <div className="blur-[106px] h-56 bg-gradient-to-br to-sky-400 from-blue-700"></div>
+        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-600"></div>
       </div>
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <div className="md:w-2/3 lg:w-1/2 mt-12 text-gray-100">

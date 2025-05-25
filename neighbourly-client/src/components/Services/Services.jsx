@@ -8,6 +8,7 @@ import { ClimbingBoxLoader } from "react-spinners";
 
 const Services = () => {
   const axiosCommon = useAxiosCommon();
+  // eslint-disable-next-line no-unused-vars
   const [params, setParams] = useSearchParams();
   const category = params.get("category");
 

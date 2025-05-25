@@ -2,16 +2,13 @@ import { useState } from "react";
 import { TbCoinTaka } from "react-icons/tb";
 import useAuth from "./../../../hooks/useAuth";
 
-
-const ConfirmBookingModal = ({ service, worker, onConfirm, onClose, }) => {
+const ConfirmBookingModal = ({ service, worker, onConfirm, onClose }) => {
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
   const { user } = useAuth();
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
 
     const bookingData = {
       resident: {
@@ -46,7 +43,7 @@ const ConfirmBookingModal = ({ service, worker, onConfirm, onClose, }) => {
         <div className="flex justify-center items-center gap-2 mb-4">
           <TbCoinTaka />
           <p>
-            Rate: <span className="badge bg-indigo-200">500 </span> BDT/Hour
+            Rate: <span className="badge bg-sky-200">500 </span> BDT/Hour
           </p>
         </div>
         <form onSubmit={handleSubmit}>
@@ -76,7 +73,7 @@ const ConfirmBookingModal = ({ service, worker, onConfirm, onClose, }) => {
             >
               Cancel
             </button>
-            <button type="submit" className="btn btn-sm bg-indigo-300">
+            <button type="submit" className="btn btn-sm bg-sky-300">
               Confirm Booking
             </button>
           </div>

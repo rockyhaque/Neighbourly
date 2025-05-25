@@ -48,9 +48,9 @@ const categoryColors = {
     dot: "bg-purple-500",
   },
   Appliance: {
-    bg: "bg-indigo-100/60",
-    text: "text-indigo-500",
-    dot: "bg-indigo-500",
+    bg: "bg-sky-100/60",
+    text: "text-sky-500",
+    dot: "bg-sky-500",
   },
   Network: {
     bg: "bg-cyan-100/60",
@@ -128,7 +128,7 @@ const ServiceTableRow = ({ service }) => {
           >
             <FaExternalLinkAlt
               size={18}
-              className="text-gray-800 hover:text-indigo-500 hover:scale-105"
+              className="text-gray-800 hover:text-sky-500 hover:scale-105"
             />
           </Link>
         </td>

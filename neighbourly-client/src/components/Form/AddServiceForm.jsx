@@ -4,7 +4,7 @@ const AddServiceForm = ({ handleSubmit, loading }) => {
   return (
     <div>
       <div className="font-nunitoSans">
-        <div className="max-w-lg mx-auto w-full space-y-8 p-10 bg-gradient-to-br from-indigo-100 via-teal-50 to-sky-100 rounded-xl shadow-xl z-10">
+        <div className="max-w-lg mx-auto w-full space-y-8 p-10 bg-gradient-to-br from-sky-100 via-teal-50 to-sky-100 rounded-xl shadow-xl z-10">
           <div className="grid gap-8 grid-cols-1">
             <form onSubmit={handleSubmit}>
               {/* Service Title & Category */}
@@ -123,7 +123,7 @@ const AddServiceForm = ({ handleSubmit, loading }) => {
                 {/* Available Status */}
                 <div className="mb-3 space-y-2 w-full text-xs">
                   <label className="font-semibold text-gray-800 py-2">
-                  Available Status
+                    Available Status
                   </label>
                   <select
                     className="block w-full bg-gray-100 bg-opacity-30 text-gray-800 border border-grey-lighter rounded-lg h-10 px-4"
@@ -163,7 +163,6 @@ const AddServiceForm = ({ handleSubmit, loading }) => {
                   />
                 </div>
               </div>
-
 
               {/* Experience */}
               <div className="mb-3 space-y-2 w-full text-xs">
@@ -205,12 +204,12 @@ const AddServiceForm = ({ handleSubmit, loading }) => {
               <div className="mt-5 text-center">
                 <button
                   type="submit"
-                  className={`relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white border border-indigo-200 rounded hover:bg-white group ${
+                  className={`relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white border border-sky-200 rounded hover:bg-white group ${
                     loading ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                   disabled={loading}
                 >
-                  <span className="w-48 h-48 rounded rotate-[-40deg] bg-indigo-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                  <span className="w-48 h-48 rounded rotate-[-40deg] bg-sky-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                   <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                     Save
                   </span>

@@ -131,7 +131,7 @@ const Profile = () => {
                   </div>
                 </div>
                 <div className="flex items-center p-4 bg-white rounded">
-                  <div className="flex flex-shrink-0 items-center justify-center bg-indigo-200 p-1 rounded">
+                  <div className="flex flex-shrink-0 items-center justify-center bg-sky-200 p-1 rounded">
                     <TbSquareRoundedArrowDownFilled size={20} />
                   </div>
                   <div className="flex-grow flex flex-col ml-4">

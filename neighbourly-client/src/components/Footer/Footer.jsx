@@ -105,7 +105,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 text-gray-700 rounded-l-md focus:outline-none"
                 />
-                <button className="bg-indigo-500 px-6 py-2 text-white font-semibold rounded-r-md hover:bg-indigo-600">
+                <button className="bg-sky-500 px-6 py-2 text-white font-semibold rounded-r-md hover:bg-sky-600">
                   Subscribe
                 </button>
               </form>

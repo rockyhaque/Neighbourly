@@ -3,14 +3,9 @@ import { categories } from "../Categories/CategoriesData";
 import toast from "react-hot-toast";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import PropTypes from "prop-types";
-import './UpdateRoleModal';
+import "./UpdateRoleModal";
 
-const ServiceUpdateModal = ({
-  service,
-  isOpen,
-  onClose,
-  refetch,
-}) => {
+const ServiceUpdateModal = ({ service, isOpen, onClose, refetch }) => {
   const axiosSecure = useAxiosSecure();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -29,7 +24,6 @@ const ServiceUpdateModal = ({
     end_time: "",
   });
 
-  
   useEffect(() => {
     if (service) {
       setFormData({
@@ -81,7 +75,7 @@ const ServiceUpdateModal = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30">
-      <div className="max-w-lg mx-auto w-full space-y-8 p-10 bg-gradient-to-br from-indigo-100 via-teal-50 to-sky-100 rounded-xl shadow-xl z-10">
+      <div className="max-w-lg mx-auto w-full space-y-8 p-10 bg-gradient-to-br from-sky-100 via-teal-50 to-sky-100 rounded-xl shadow-xl z-10">
         <h2 className="text-center text-xl font-bold">Update Service</h2>
         <div className="max-h-[70vh] overflow-y-auto">
           <form onSubmit={handleSubmit}>
@@ -280,7 +274,6 @@ const ServiceUpdateModal = ({
               </div>
             </div>
 
-            
             <div className="flex justify-end gap-3 mt-6">
               <button
                 className="py-0 px-4 text-sm font-medium text-rose-700 bg-rose-100 hover:bg-gray-300 rounded-lg"
@@ -289,18 +282,18 @@ const ServiceUpdateModal = ({
               >
                 Cancel
               </button>
-              
+
               <div className="text-center">
                 <button
                   type="submit"
-                  className={`relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white border border-indigo-200 rounded hover:bg-white group ${
+                  className={`relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white border border-sky-200 rounded hover:bg-white group ${
                     loading ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                   disabled={loading}
                 >
-                  <span className="w-48 h-48 rounded rotate-[-40deg] bg-indigo-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                  <span className="w-48 h-48 rounded rotate-[-40deg] bg-sky-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                   <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                  {loading ? "Updating..." : "Update"}
+                    {loading ? "Updating..." : "Update"}
                   </span>
                 </button>
               </div>
@@ -313,26 +306,26 @@ const ServiceUpdateModal = ({
 };
 
 ServiceUpdateModal.propTypes = {
-    service: PropTypes.shape({
-      _id: PropTypes.string.isRequired,
-      service_title: PropTypes.string.isRequired,
-      category: PropTypes.string.isRequired,
-      phone: PropTypes.string,
-      address: PropTypes.string,
-      sex: PropTypes.string,
-      about_me: PropTypes.string,
-      experience: PropTypes.string,
-      additional_notes: PropTypes.string,
-      skills: PropTypes.string,
-      shift: PropTypes.string,
-      availability_status: PropTypes.string,
-      start_time: PropTypes.string,
-      end_time: PropTypes.string,
-    }),
-    isOpen: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-    refetch: PropTypes.func.isRequired,
-    handleUpdate: PropTypes.func.isRequired,
-  };
+  service: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
+    service_title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    phone: PropTypes.string,
+    address: PropTypes.string,
+    sex: PropTypes.string,
+    about_me: PropTypes.string,
+    experience: PropTypes.string,
+    additional_notes: PropTypes.string,
+    skills: PropTypes.string,
+    shift: PropTypes.string,
+    availability_status: PropTypes.string,
+    start_time: PropTypes.string,
+    end_time: PropTypes.string,
+  }),
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  refetch: PropTypes.func.isRequired,
+  handleUpdate: PropTypes.func.isRequired,
+};
 
 export default ServiceUpdateModal;
