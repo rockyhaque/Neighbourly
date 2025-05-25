@@ -11,9 +11,9 @@ Effortlessly connect residents with trusted home service providers. Our E-Societ
 
 #### Repository ➡️ https://github.com/rockyhaque/Neighbourly
 
-#### Frontend Repository ➡️ https://github.com/rockyhaque/neighbourly-client
+#### Frontend Repository ➡️ https://github.com/rockyhaque/Neighbourly/tree/main/neighbourly-client
 
-#### Backend Repository ➡️ https://github.com/rockyhaque/neighbourly-server
+#### Backend Repository ➡️ https://github.com/rockyhaque/Neighbourly/tree/main/neighbourly-server
 
 
 <hr>
