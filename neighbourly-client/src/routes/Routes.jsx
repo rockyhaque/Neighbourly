@@ -17,8 +17,6 @@ import ManageBookings from "../pages/Dashboard/Worker/ManageBookings";
 import About from "../components/About/About";
 import ContactUsPage from "../pages/ContactUs/ContactUs";
 import FAQ from "../components/FAQ/FAQ";
-// import WorkerRoute from "./WorkerRoute";
-// import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
   {

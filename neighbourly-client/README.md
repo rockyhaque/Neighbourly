@@ -14,16 +14,38 @@ Effortlessly connect residents with trusted home service providers. Our E-Societ
 
 ### Admin Credentials
 
-
-
 Email: 
 ```
-admin@neighbourly.com
+admin@gmail.com
 ```
 
 Pass: 
 ```
-shasdfJKL:1@
+Admin@2025
+```
+
+### Resident Credentials
+
+Email: 
+```
+resident@gmail.com
+```
+
+Pass: 
+```
+Resident@2025
+```
+
+### Worker Credentials
+
+Email: 
+```
+worker@gmail.com
+```
+
+Pass: 
+```
+Worker@2025
 ```
 <hr>
 

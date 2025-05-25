@@ -77,7 +77,7 @@ const Navbar = () => {
               <NavItems to="/contact-us">Contact Us</NavItems>
               <NavItems to="/about">About</NavItems>
               <NavItems to="/faq">FAQ</NavItems>
-              <NavItems to="/dashboard">Dashboard</NavItems>
+              {user && <NavItems to="/dashboard">Dashboard</NavItems>}
               {!user && (
                 <>
                   <NavItems to="/login">Login</NavItems>

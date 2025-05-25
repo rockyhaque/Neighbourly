@@ -33,7 +33,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-12 sm:py-24">
+    <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-2 ">
       <div className="container mx-auto px-4">
         
         <SectionTitle heading="Frequently Asked Questions" description="Here are some of the common questions we receive. Feel free to contact us if you need more information!" />

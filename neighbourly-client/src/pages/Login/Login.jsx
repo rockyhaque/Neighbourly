@@ -11,6 +11,7 @@ const Login = () => {
   const [showPass, setShowPass] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
   const from = location?.state || "/";
   const { signInWithGoogle, signIn, loading, setLoading, resetPassword } =
     useAuth();
@@ -21,6 +22,7 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
     getValues,
+    setValue,
   } = useForm();
 
   const onSubmit = async (data) => {
@@ -69,6 +71,29 @@ const Login = () => {
       // console.log(err);
       toast.success(err.message);
     }
+  };
+
+  // demo login credentials
+  const handleDemoLogin = (role) => {
+    let email, password;
+
+    if (role === "admin") {
+      email = "admin@gmail.com";
+      password = "Admin@2025";
+    } else if (role === "resident") {
+      email = "resident@gmail.com";
+      password = "Resident@2025";
+    } else if (role === "worker") {
+      email = "worker@gmail.com";
+      password = "Worker@2025";
+    }
+
+    setValue("email", email);
+    setValue("password", password);
+
+    toast.success(
+      "This is for demo purpose only. Please click Login to continue."
+    );
   };
 
   return (
@@ -132,6 +157,31 @@ const Login = () => {
               </div>
 
               <form onSubmit={handleSubmit(onSubmit)}>
+                {/* Demo Credentails button */}
+                <div className="flex justify-center gap-2 mt-4">
+                  <button
+                    type="button"
+                    onClick={() => handleDemoLogin("admin")}
+                    className="text-sm bg-sky-500 hover:bg-sky-600 text-white py-1 px-3 rounded"
+                  >
+                    Admin Demo
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleDemoLogin("resident")}
+                    className="text-sm bg-green-500 hover:bg-green-600 text-white py-1 px-3 rounded"
+                  >
+                    Resident Demo
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleDemoLogin("worker")}
+                    className="text-sm bg-orange-500 hover:bg-orange-600 text-white py-1 px-3 rounded"
+                  >
+                    Worker Demo
+                  </button>
+                </div>
+
                 {/* Email Authentication */}
 
                 <div className="mt-4">
@@ -194,7 +244,7 @@ const Login = () => {
                 </div>
                 {errors.password?.type === "required" && (
                   <span className="text-red-500 font-semibold text-md mt-2">
-                    Password is required
+                    *Password is required
                   </span>
                 )}
                 {errors.password?.type === "minLength" && (

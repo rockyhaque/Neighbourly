@@ -4,6 +4,8 @@ import Services from "../../components/Services/Services";
 import OurSpeciality from "../../components/OurSpeciality/OurSpeciality";
 import FAQ from "../../components/FAQ/FAQ";
 import GradientHero from "../../components/HeroSection/GradientHero";
+import OfferSection from "../../components/Offer/Offer";
+import NewsletterSection from "../../components/Newsletter/Newsletter";
 
 const Home = () => {
   return (
@@ -15,8 +17,13 @@ const Home = () => {
       <div className="my-10">
         <Categories />
       </div>
+
       <Services />
+      <OfferSection />
       <FAQ />
+      <div>
+        <NewsletterSection />
+      </div>
       <OurSpeciality />
     </div>
   );
