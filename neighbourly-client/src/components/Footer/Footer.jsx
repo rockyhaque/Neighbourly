@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gray-800 text-gray-300 pb-16 pt-10 overflow-hidden">
+    <footer className="relative bg-gray-800 text-gray-300 pb-8 pt-10 overflow-hidden z-10">
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-800 opacity-20" />
@@ -52,17 +52,12 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="/services" className="hover:text-white">
-                      Services
+                    <a href="/faq" className="hover:text-white">
+                      FAQ
                     </a>
                   </li>
                   <li>
-                    <a href="/blog" className="hover:text-white">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/contact" className="hover:text-white">
+                    <a href="/contact-us" className="hover:text-white">
                       Contact
                     </a>
                   </li>
@@ -72,17 +67,17 @@ const Footer = () => {
                 <h3 className="font-semibold text-gray-100 mb-4">Legal</h3>
                 <ul className="space-y-3 text-sm">
                   <li>
-                    <a href="/privacy" className="hover:text-white">
+                    <a href="/privacy-policy" className="hover:text-white">
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href="/terms" className="hover:text-white">
+                    <a href="/terms-and-conditions" className="hover:text-white">
                       Terms & Conditions
                     </a>
                   </li>
                   <li>
-                    <a href="/cookies" className="hover:text-white">
+                    <a href="/cookie-policy" className="hover:text-white">
                       Cookie Policy
                     </a>
                   </li>
@@ -113,7 +108,7 @@ const Footer = () => {
           </div>
 
           {/* Footer Bottom Section */}
-          <div className="border-t border-gray-700 pt-8 flex flex-col lg:flex-row justify-between items-center">
+          <div className="border-t border-gray-700 pt-4 flex flex-col lg:flex-row justify-between items-center">
             <p className="text-sm">© {currentYear} Neighbourly. All rights reserved.</p>
             <div className="flex space-x-6 mt-6 lg:mt-0">
               <a href="#" className="hover:text-white">

@@ -17,8 +17,17 @@ const DashboardLayout = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen md:flex">
-      {/* Button to toggle sidebar visibility on small devices */}
+    <div className="h-screen overflow-hidden flex">
+      {/* Sidebar */}
+      <div
+        className={`fixed inset-y-0 left-0 z-40 w-64 transition-transform duration-200 ease-in-out bg-gray-800 ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } md:translate-x-0 md:relative md:flex-shrink-0`}
+      >
+        <Sidebar />
+      </div>
+
+      {/* Toggle Button for small devices */}
       <button
         className="md:hidden p-2 text-2xl text-gray-600 fixed top-4 right-4 z-50"
         onClick={toggleSidebar}
@@ -26,17 +35,8 @@ const DashboardLayout = () => {
         <AiOutlineMenu />
       </button>
 
-      {/* Sidebar */}
-      <div
-        className={`fixed inset-y-0 left-0 transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-200 ease-in-out md:relative md:translate-x-0 z-40 w-64`}
-      >
-        <Sidebar />
-      </div>
-
-      {/* Outlet content */}
-      <div className="flex-1">
+      {/* Main content area that scrolls */}
+      <div className="flex-1 overflow-y-auto pl-0 md:px-6">
         <div className="p-5">
           <Outlet />
         </div>
@@ -44,5 +44,6 @@ const DashboardLayout = () => {
     </div>
   );
 };
+
 
 export default DashboardLayout;

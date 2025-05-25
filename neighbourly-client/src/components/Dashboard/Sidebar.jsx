@@ -11,7 +11,7 @@ import { IoLogOutOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const { user, logOut } = useAuth();
-  const [role, isLoading] = useRole();
+  const [role] = useRole();
 
   return (
     <div className="w-64 h-full bg-gradient-to-r from-neutral-900 to-slate-800  p-3 shadow-lg pt-10 flex flex-col justify-between  ">

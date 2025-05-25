@@ -17,6 +17,9 @@ import ManageBookings from "../pages/Dashboard/Worker/ManageBookings";
 import About from "../components/About/About";
 import ContactUsPage from "../pages/ContactUs/ContactUs";
 import FAQ from "../components/FAQ/FAQ";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "../components/TermsAndConditions/TermsAndConditions";
+import CookiePolicy from "../components/CookiePolicy/CookiePolicy";
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +54,18 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/cookie-policy",
+        element: <CookiePolicy />,
       },
     ],
   },

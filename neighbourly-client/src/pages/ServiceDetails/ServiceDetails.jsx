@@ -19,7 +19,6 @@ const ServiceDetails = () => {
   const {
     data: service = {},
     isLoading,
-    refetch,
   } = useQuery({
     queryKey: ["service", id],
     queryFn: async () => {
@@ -35,6 +34,7 @@ const ServiceDetails = () => {
         toast.success("Booking Successful!");
         setModalOpen(false); // Close the modal on successful booking
       }
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error("Booking failed! Please try again.");
     }
@@ -53,7 +53,7 @@ const ServiceDetails = () => {
 
   return (
     <>
-      <div className=" z-10">
+      <div className="z-10">
         <section className="">
           <div
             className="absolute top-0 w-full h-96 bg-center bg-cover"

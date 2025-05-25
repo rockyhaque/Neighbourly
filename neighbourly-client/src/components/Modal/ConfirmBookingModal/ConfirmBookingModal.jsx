@@ -30,9 +30,9 @@ const ConfirmBookingModal = ({ service, worker, onConfirm, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full">
-        <h3 className="font-bold text-lg mb-4 text-center">
+        <h3 className="font-bold text-lg mb-4 text-center z-50">
           Booking Confirmation!
         </h3>
         <div className="avatar mb-4 flex justify-center">

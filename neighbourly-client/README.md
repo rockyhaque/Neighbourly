@@ -1,49 +1,55 @@
 # Neighbourly Client
 
+<img src="public/logo.png" align="right" width="110" height="110" />
+
 Effortlessly connect residents with trusted home service providers. Our E-Society Management platform ensures easy access to local experts for plumbing, electrical work, cleaning, and more within the community.
 
 
-#### Live URL -> https://neighbourly-beta.web.app
+#### Live URL ➡️ https://neighbourly-beta.web.app
 
-#### Server APIs -> https://neighbourly-server.vercel.app
+#### Server APIs ➡️ https://neighbourly-server.vercel.app
 
-#### Repository -> https://github.com/rockyhaque/Neighbourly
+#### Repository ➡️ https://github.com/rockyhaque/Neighbourly
+
+#### Frontend Repository ➡️ https://github.com/rockyhaque/neighbourly-client
+
+#### Backend Repository ➡️ https://github.com/rockyhaque/neighbourly-server
 
 
 <hr>
 
-### Admin Credentials
+### ✅Admin Credentials
 
 Email: 
 ```
 admin@gmail.com
 ```
 
-Pass: 
+Password: 
 ```
 Admin@2025
 ```
 
-### Resident Credentials
+### ✅Resident Credentials
 
 Email: 
 ```
 resident@gmail.com
 ```
 
-Pass: 
+Password: 
 ```
 Resident@2025
 ```
 
-### Worker Credentials
+### ✅Worker Credentials
 
 Email: 
 ```
 worker@gmail.com
 ```
 
-Pass: 
+Password: 
 ```
 Worker@2025
 ```
@@ -77,7 +83,7 @@ Dependencies:
 
 `For Workers:` They can sign up, create a profile showcasing their skills and will be hired by residents.
 
-`For Residents:` They can post service requests—like needing a plumber or a gardener—and then choose from the workers who apply.
+`For Residents:` They can choose from the workers who is available.
 
 `For Admin:` The admin plays a crucial role in managing everything on the platform. They can approve worker registrations, oversee service requests, and ensure the platform runs smoothly.
 
@@ -97,10 +103,9 @@ Dependencies:
 
 - Manage users 
 
-    - Update
+    - Update User
 
     - Delete User
-
 
 
 ### Resident features:
@@ -139,4 +144,4 @@ Dependencies:
 
 ### Conclusion:
 
-This project effectively combines a comprehensive set of functionalities to manage service requests between residents and workers within a community. The system is designed with user-friendly features such as conditional navigation, secure authentication, and seamless booking processes. By integrating a timer system for workers and detailed booking histories for residents, the project ensures transparency and efficiency in managing service interactions. With a strong focus on usability and security, this system is well-suited to streamline service management and enhance the overall experience for both residents and workers.
+This project effectively combines a comprehensive set of functionalities to manage service requests between residents and workers within a community. The system is designed with user-friendly features such as conditional navigation, secure authentication, and seamless booking processes. By integrating a timer system for workers and detailed booking histories for residents, the project ensures transparency and efficiency in managing service interactions.

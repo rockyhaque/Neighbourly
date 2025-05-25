@@ -8,6 +8,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, logOut } = useAuth();
   const [role] = useRole();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleLogout = async () => {
+    await logOut(); // ensure logout completes
+    setIsDropdownOpen(false); // close the dropdown after logout
+  };
 
   return (
     <nav className="relative bg-white  dark:bg-gray-800 shadow-2xl sticky z-50 top-0">
@@ -87,11 +93,12 @@ const Navbar = () => {
             </div>
 
             <div className="flex justify-center items-center mt-4 lg:mt-0">
-              <div className="dropdown dropdown-end">
-                {user ? (
+              <div className="dropdown dropdown-end relative">
+                {user && (
                   <div
                     tabIndex={0}
                     role="button"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className="btn btn-ghost btn-circle avatar"
                   >
                     <div className="w-10 rounded-full">
@@ -102,32 +109,29 @@ const Navbar = () => {
                       />
                     </div>
                   </div>
-                ) : (
-                  <div></div>
                 )}
 
-                <ul
-                  tabIndex={0}
-                  className="menu menu-sm dropdown-content bg-gradient-to-r from-sky-100 to-violet-100 rounded-box z-[1] mt-3 w-52 p-2 shadow left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none"
-                >
-                  <li>
-                    <div className="justify-between">
-                      {user?.displayName}
-                      <span className="badge bg-sky-300">
-                        {role.charAt(0).toUpperCase() +
-                          role.slice(1).toLowerCase()}
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <Link to="/profile">
-                      <p>Profile Settings</p>
-                    </Link>
-                  </li>
-                  <li>
-                    <button onClick={logOut}>Logout</button>
-                  </li>
-                </ul>
+                {isDropdownOpen && (
+                  <ul className="menu menu-sm dropdown-content bg-gradient-to-r from-sky-100 to-violet-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  absolute left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 right-0">
+                    <li>
+                      <div className="justify-between">
+                        {user?.displayName}
+                        <span className="badge bg-sky-300">
+                          {role.charAt(0).toUpperCase() +
+                            role.slice(1).toLowerCase()}
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <Link to="/profile">
+                        <p>Profile Settings</p>
+                      </Link>
+                    </li>
+                    <li>
+                      <button onClick={handleLogout}>Logout</button>
+                    </li>
+                  </ul>
+                )}
               </div>
             </div>
           </div>
