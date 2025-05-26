@@ -67,32 +67,44 @@ const AuthProvider = ({ children }) => {
   };
 
   // save user
-  const saveUser = async (user) => {
-    const currentUser = {
-      name: user?.displayName,
-      photo: user?.photoURL,
-      email: user?.email,
-      role: 'resident',
-      status: 'Verified'
-    }
-    const {data} = await axios.put(`${import.meta.env.VITE_API_URL}/user`, currentUser)
-    return data;
-  };
+  // const saveUser = async (user) => {
+  //   const currentUser = {
+  //     name: user?.displayName,
+  //     photo: user?.photoURL,
+  //     email: user?.email,
+  //     role: 'resident',
+  //     status: 'Verified'
+  //   }
+  //   const {data} = await axios.put(`${import.meta.env.VITE_API_URL}/user`, currentUser)
+  //   return data;
+  // };
 
   // onAuthStateChange
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+  //     setUser(currentUser);
+  //     if (currentUser) {
+  //       getToken(currentUser.email);
+  //       saveUser(currentUser)
+  //     }
+  //     setLoading(false);
+  //   });
+  //   return () => {
+  //     return unsubscribe();
+  //   };
+  // }, []);
+
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-      if (currentUser) {
-        getToken(currentUser.email);
-        saveUser(currentUser)
-      }
-      setLoading(false);
-    });
-    return () => {
-      return unsubscribe();
-    };
-  }, []);
+  const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+    setUser(currentUser);
+    if (currentUser) {
+      await getToken(currentUser.email);
+    }
+    setLoading(false);
+  });
+  return () => unsubscribe();
+}, []);
+
 
   const authInfo = {
     user,

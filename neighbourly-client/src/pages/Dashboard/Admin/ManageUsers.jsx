@@ -152,7 +152,7 @@ const ManageUsers = () => {
                                       <img
                                         src={
                                           user?.photo ||
-                                          "https://via.placeholder.com/150?text=User+Image"
+                                          "https://i.ibb.co/4RRjWy9D/user.png"
                                         }
                                         alt="User Photo"
                                       />

@@ -78,13 +78,13 @@ const Login = () => {
     let email, password;
 
     if (role === "admin") {
-      email = "admin@gmail.com";
+      email = "admin@neighbourly.bd";
       password = "Admin@2025";
     } else if (role === "resident") {
-      email = "resident@gmail.com";
+      email = "resident@neighbourly.bd";
       password = "Resident@2025";
     } else if (role === "worker") {
-      email = "worker@gmail.com";
+      email = "worker@neighbourly.bd";
       password = "Worker@2025";
     }
 

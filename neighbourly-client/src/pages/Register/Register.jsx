@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import toast from "react-hot-toast";
 import { imageUpload } from "../../api/utils";
 import useAuth from "../../hooks/useAuth";
 import { CgSpinnerTwoAlt } from "react-icons/cg";
+import axios from "axios";
 
 const Register = () => {
-  const [error, setError] = useState("");
   const [showPass, setShowPass] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
+
   const {
     createUser,
     signInWithGoogle,
@@ -39,16 +39,35 @@ const Register = () => {
       const image_url = await imageUpload(image);
 
       // user Registration
-      const result = await createUser(email, password);
-      // console.log(result);
+      await createUser(email, password);
+      
 
       // save username and photo in firebase
       await updateUserProfile(name, image_url);
-      navigate("/");
+
+      // wait for the profile to be updated
+      // const updatedUser = {
+      //   ...newUser,
+      //   displayName: name,
+      //   photoURL: image_url,
+      // };
+
+      // Save to DB with updated name and photo
+    await axios.put(`${import.meta.env.VITE_API_URL}/user`, {
+      name,
+      photo: image_url,
+      email,
+      role: 'resident',
+      status: 'Verified',
+    });
+
       toast.success("Sign Up Successfull!");
+      navigate("/");
     } catch (err) {
       // console.log(err);
       toast.success(err.message);
+    } finally {
+      setLoading(false);
     }
   };
 
