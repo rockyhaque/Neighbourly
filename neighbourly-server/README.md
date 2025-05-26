@@ -10,9 +10,9 @@ Effortlessly connect residents with trusted home service providers. Our E-Societ
 
 #### Repository ➡️ https://github.com/rockyhaque/Neighbourly
 
-#### Frontend Repository ➡️ https://github.com/rockyhaque/neighbourly-client
+#### Frontend Repository ➡️ https://github.com/rockyhaque/Neighbourly/tree/main/neighbourly-client
 
-#### Backend Repository ➡️ https://github.com/rockyhaque/neighbourly-server
+#### Backend Repository ➡️ https://github.com/rockyhaque/Neighbourly/tree/main/neighbourly-server
 
 <hr>
 
@@ -20,7 +20,7 @@ Effortlessly connect residents with trusted home service providers. Our E-Societ
 
 Email: 
 ```
-admin@gmail.com
+admin@neighbourly.bd
 ```
 
 Password: 
@@ -32,7 +32,7 @@ Admin@2025
 
 Email: 
 ```
-resident@gmail.com
+resident@neighbourly.bd
 ```
 
 Password: 
@@ -44,7 +44,7 @@ Resident@2025
 
 Email: 
 ```
-worker@gmail.com
+worker@neighbourly.bd
 ```
 
 Password: 
